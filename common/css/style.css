@@ -1,9 +1,8 @@
+@charset "utf-8";
+
 :root {
 	--harry: rgb(76, 92, 235);
   }
-
-
-@charset "utf-8";
 
 @font-face {
 	font-family: 'Calibre-Bold';
