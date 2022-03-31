@@ -1,12 +1,16 @@
 -dinnermusik
+    reich durch jazz in alle gnavis
+    sounz + maryandthemagictones als iframe im 
+
 -check landi&ga&alfred
 -translate
--check cookibanner deactivate calender site
-zappanation video
+- COOKIE
+    youtube
+    calendar
 
-calendar language funktioniert in w3c!?!?
+zappanation video
 
 clear errors in devtools
 unterfenster englisch vorbereiten
 
-impressum erreichbar machen, ggf gear raus
+@charset "utf-8"; und andere css wnr/err
