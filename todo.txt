@@ -5,8 +5,5 @@
     calendar
 
 clear errors in devtools
-unterfenster englisch vorbereiten
-
-@charset "utf-8"; und andere css wnr/err
 
 servus needs reload 4 menue???
