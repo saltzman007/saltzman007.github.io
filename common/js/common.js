@@ -111,10 +111,6 @@
 	bq.ui.autoload('langnavi',true);
 
 
-
-
-
-
 	function FlowGrid($target){
 		this.$target = $($target).addClass('hide');
 		this.$entries = this.$target.find('.entry');
