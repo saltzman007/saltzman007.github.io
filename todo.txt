@@ -3,7 +3,3 @@
 - COOKIE
     youtube
     calendar
-
-clear errors in devtools
-
-servus needs reload 4 menue???
