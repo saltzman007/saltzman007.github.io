@@ -1,9 +1,4 @@
 -check landi&ga&alfred
 -translate
-- COOKIE
-    youtube
-    calendar
 
-clear errors in devtools
-
-servus needs reload 4 menue???  
+reload 4 menue???  
