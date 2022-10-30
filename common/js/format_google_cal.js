@@ -149,10 +149,10 @@
                 upcomingElem.insertAdjacentHTML('beforebegin', settings.upcomingHeading);
             }
     
-            if (pastElem.firstChild) {
-                pastElem.insertAdjacentHTML('beforebegin', settings.pastHeading);
-            }
-        };
+        //     if (pastElem.firstChild) {
+        //         pastElem.insertAdjacentHTML('beforebegin', settings.pastHeading);
+        //     }
+         };
     
         //Gets JSON from Google Calendar and transfroms it into html list items and appends it to past or upcoming events list
         var _init = function _init(settings) {
@@ -493,4 +493,4 @@
     
     /***/ })
     /******/ ]);
-    //# sourceMappingURL=format-google-calendar.js.map
+    // sourceMappingURL=format-google-calendar.js.map
