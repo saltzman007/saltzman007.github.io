@@ -149,9 +149,6 @@
                 upcomingElem.insertAdjacentHTML('beforebegin', settings.upcomingHeading);
             }
     
-        //     if (pastElem.firstChild) {
-        //         pastElem.insertAdjacentHTML('beforebegin', settings.pastHeading);
-        //     }
          };
     
         //Gets JSON from Google Calendar and transfroms it into html list items and appends it to past or upcoming events list
