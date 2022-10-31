@@ -16,49 +16,6 @@
 	<meta property="og:description" content="Harry Saltzman Saxophone Kunstsaxophonist Jazzpiraten" />
 	<link rel="shortcut icon" href="pics/icon.png" />
 
-	<script src="common/js/format_google_cal.js"></script>
-
-	<script>
-		formatGoogleCalendar.init({
-			calendarUrl: 'https://www.googleapis.com/calendar/v3/calendars/j68v7bktcnj5q0i22vojr26210@group.calendar.google.com/events?key=AIzaSyDW25bz3KaPQxdtBWtcOz6WCb6FP8WWO_0',
-			past: false,
-			upcoming: true,
-			sameDayTimes: true,
-			dayNames: false,
-			pastTopN: -1,
-			upcomingTopN: 10,
-			recurringEvents: true,
-			itemsTagName: 'li',
-			upcomingSelector: '#events-upcoming',
-			// pastSelector: '#events-past',
-			upcomingHeading: '<h2>Events</h2>',
-			// pastHeading: '<h1>Past events</h1>',
-			format: ['*date*', ' ', '*summary*', ' — ', '*description*', ' ', '*location*'],
-			timeMin: '2016-06-03T10:00:00-07:00',
-			timeMax: '2050-06-03T10:00:00-07:00'
-		});
-	</script>
-	<script>
-		formatGoogleCalendar.init({
-			calendarUrl: 'https://www.googleapis.com/calendar/v3/calendars/1n4mi37755lep00rgc3s47lmdk@group.calendar.google.com/events?key=AIzaSyDW25bz3KaPQxdtBWtcOz6WCb6FP8WWO_0',
-			past: false,
-			upcoming: true,
-			sameDayTimes: true,
-			dayNames: false,
-			pastTopN: -1,
-			upcomingTopN: 10,
-			recurringEvents: true,
-			itemsTagName: 'li',
-			upcomingSelector: '#events-upcoming',
-			// pastSelector: '#events-past',
-			//upcomingHeading: '<h2>Jazzpiraten Events</h2>',
-			// pastHeading: '<h1>Past events</h1>',
-			format: ['Jazzpiraten: ', '*date*', ' ', '*summary*', ' — ', '*description*', ' ', '*location*'],
-			timeMin: '2016-06-03T10:00:00-07:00',
-			timeMax: '2050-06-03T10:00:00-07:00'
-		});
-	</script>
-
 
 
 	<link rel="stylesheet" href="common/css/style.css">
@@ -130,6 +87,50 @@
 								<div class="tabled-td">
 									<ul id="events-upcoming">
 									</ul>
+									<script src="common/js/format_google_cal.js"></script>
+
+									<script>
+										formatGoogleCalendar.init({
+											calendarUrl: 'https://www.googleapis.com/calendar/v3/calendars/j68v7bktcnj5q0i22vojr26210@group.calendar.google.com/events?key=AIzaSyDW25bz3KaPQxdtBWtcOz6WCb6FP8WWO_0',
+											past: false,
+											upcoming: true,
+											sameDayTimes: true,
+											dayNames: false,
+											pastTopN: -1,
+											upcomingTopN: 10,
+											recurringEvents: true,
+											itemsTagName: 'li',
+											upcomingSelector: '#events-upcoming',
+											// pastSelector: '#events-past',
+											upcomingHeading: '<h2>Events</h2>',
+											// pastHeading: '<h1>Past events</h1>',
+											format: ['*date*', ' ', '*summary*', ' — ', '*description*', ' ', '*location*'],
+											timeMin: '2016-06-03T10:00:00-07:00',
+											timeMax: '2050-06-03T10:00:00-07:00'
+										});
+									</script>
+									<script>
+										formatGoogleCalendar.init({
+											calendarUrl: 'https://www.googleapis.com/calendar/v3/calendars/1n4mi37755lep00rgc3s47lmdk@group.calendar.google.com/events?key=AIzaSyDW25bz3KaPQxdtBWtcOz6WCb6FP8WWO_0',
+											past: false,
+											upcoming: true,
+											sameDayTimes: true,
+											dayNames: false,
+											pastTopN: -1,
+											upcomingTopN: 10,
+											recurringEvents: true,
+											itemsTagName: 'li',
+											upcomingSelector: '#events-upcoming',
+											// pastSelector: '#events-past',
+											//upcomingHeading: '<h2>Jazzpiraten Events</h2>',
+											// pastHeading: '<h1>Past events</h1>',
+											format: ['Jazzpiraten: ', '*date*', ' ', '*summary*', ' — ', '*description*', ' ', '*location*'],
+											timeMin: '2016-06-03T10:00:00-07:00',
+											timeMax: '2050-06-03T10:00:00-07:00'
+										});
+									</script>
+
+
 									<div lang="de">
 										<p class="text_line">
 											Schauen Sie vorbei!<br>
