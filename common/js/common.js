@@ -14,7 +14,7 @@
 	 * ---------------------------------------------------------------------- */
 	bq.ui.plugin('navigation',function(options){
 		options = $.extend({}, this.defaults, options);
-		var clickEvent = ('ontouchstart' in window)? 'touchstart.navigation' : 'click.navigation';
+		var clickEvent = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0))? 'touchstart.navigation' : 'click.navigation';
 		var $b = $('body');
 
 		function clickHandler(e){
@@ -350,7 +350,7 @@
 		$('.nav-links:has(.sub-nav-links) .sub-nav-links').css('display','none');
 		$('.nav-links:has(.sub-nav-links) > ul > .current').trigger('mouseover');
 
-		var clickEvent = ('ontouchstart' in window)? 'touchstart.cnav-links.bq' : 'click.cnav-links.bq'
+		var clickEvent = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0)) ? 'touchstart.cnav-links.bq' : 'click.cnav-links.bq'
 		$(document).on(clickEvent,'#cnavi-links > ul > li > a', function(){
 			if(!$(this).closest('li').hasClass('current')){
 				$(this).closest('#cnavi-links').removeClass('has-sub-nav-links').find('.current').removeClass('current');
@@ -708,11 +708,6 @@
 
 	}
 
-
-
-
-
-
 	var processQueue = $.Queue(),
 		_requests = [],
 		prev = null,
@@ -845,60 +840,6 @@
 
 	function notFound(){
 	}
-
-
-	// var contactData = {
-	// 		clickEvent : ('ontouchstart' in window)? 'touchstart.page.contact' : 'click.page.contact'
-	// 	},
-	// 	$contactLoading = $.get('/contact').done(function(res){
-	// 		contactData.title = res.match(/<title>(.*)<\/title>/)[1];
-	// 		var $c = _perseHTML(res).find('#contents > .content')
-	// 		$c.removeClass('content').addClass('overlay');
-	// 		$c.find('.lang-nav').remove();
-	// 		contactData.content =  $c;
-	// 		$('#wrap').append($c);
-	// 	});
-
-	// function contactEnter(ctx, next){
-	// 	if(ctx.init) return next();
-
-	// 	if($contactLoading.state() != 'resolved'){
-	// 		$contactLoading.done(_showContact);
-	// 	}else{
-	// 		_showContact()
-	// 	}
-	// 	$('#menu a[href="/contact"]').addClass('current');
-	// 	if($('body').hasClass('cnav-collapse')){
-	// 		bq.ui.navigation.closeMenu();
-	// 	}
-	// }
-
-	// function contactExit(prev_ctx, next, next_ctx){
-	// 	$(document).off(contactData.clickEvent+'.close');
-	// 	contactData.content.removeClass('show');
-	// 	setTimeout(function(){
-	// 		next();
-	// 	},500);
-	// 	$('#menu a[href="/contact"]').removeClass('current');
-	// }
-
-	// function _showContact(){
-	// 	contactData.content.addClass('show');
-	// 	$('title').text(contactData.title);
-
-	// 	$(document).on(contactData.clickEvent+'.close', function(e){
-	// 		if($(e.target).closest(bq.ui.navigation.defaults.cancelClick).length){
-	// 			return;
-	// 		}
-	// 		$(document).off(contactData.clickEvent+'.close');
-	// 		bq.page.back()
-	// 	})
-	// }
-
-
-
-	// bq.page.exit('/contact', contactExit);
-	// bq.page('/contact', contactEnter);
 
 	bq.page.exit('*', pageExit);
 	bq.page('*', pageEnter);
