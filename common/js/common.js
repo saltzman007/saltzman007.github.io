@@ -56,6 +56,7 @@
 		$(document).on(clickEvent+'.open', options.target+' '+options.btn, clickHandler);
 
 		this.closeMenu = function(){
+			window.scrollTo(0, 0);
 			var $t = $(options.target).filter('.'+options.oepnClass);
 			if($t.length == 0) return;
 			$t.find(options.btn).trigger(clickEvent);
