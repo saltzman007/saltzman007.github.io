@@ -289,9 +289,9 @@
 	$(function(){
 		var $b = $('body');
 
-		if($.browser.mobile){
-			$('html').addClass('mobile')
-		}
+		// if($.browser.mobile){
+		// 	$('html').addClass('mobile')
+		// }
 
 		bq.ui.autoload([
 			'rollOver',
@@ -542,7 +542,6 @@
 	}
 
 	function profileDetailFx(prev, next, $new_content, params){
-		//if($.browser.mobile) return defaultFx(prev, next, $new_content);
 		return function(){
 			var self = this,
 				$b = $('body'),
