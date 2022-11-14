@@ -1675,11 +1675,12 @@ li.current .sub-nav-links {
 }
 
 .mobile .entry a .meta {
-	display: none;
-	-webkit-transition: none;
-	-moz-transition: none;
-	-o-transition: none;
-	transition: none;
+	opacity: 1;
+	-webkit-transform: translate(0, 0px);
+	-moz-transform: translate(0, 0px);
+	-ms-transform: translate(0, 0px);
+	-o-transform: translate(0, 0px);
+	transform: translate(0, 0px);
 }
 
 .entry .meta .date,

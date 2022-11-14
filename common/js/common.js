@@ -289,9 +289,9 @@
 	$(function(){
 		var $b = $('body');
 
-		// if($.browser.mobile){
-		// 	$('html').addClass('mobile')
-		// }
+		 if($.browser.mobile){
+		 	$('html').addClass('mobile')
+		 }
 
 		bq.ui.autoload([
 			'rollOver',
