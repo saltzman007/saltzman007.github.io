@@ -2462,7 +2462,7 @@ button.btn {
 	display: inline-block;
 	background-color: #008ca2;
 	position: relative;
-	width: 150px;
+	width: 300px;
 	height: 35px;
 	line-height: 35px;
 	font-size: 17px;
@@ -2473,12 +2473,17 @@ button.btn {
 	border: none;
 	padding: 0;
 	vertical-align: top;
+	/* background:url('../img/icons/icon_download.gif') no-repeat left center; */
+	border-radius: 16px;
 
 	-webkit-transition: background-color ease-out 0.25s;
 	-moz-transition: background-color ease-out 0.25s;
 	-o-transition: background-color ease-out 0.25s;
 	transition: background-color ease-out 0.25s;
 }
+/* button::before {
+	content: "🔎 ";
+  } */
 
 .btn:hover,
 .btn:active {

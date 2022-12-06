@@ -2,12 +2,6 @@
 lutzi
  - Hörbeispiele leichter zu finden?
 
- Andreas Veranstalter Button
-
- Instrumente 
- Ausbildung
- Stilrichtungen
- Pressebild mit Logo im Bild
- 
+ Mobile IFrame size opt
 
     
