@@ -245,12 +245,12 @@ em {
  ::selection
 ---------------------------------------------------*/
 ::selection {
-	background: #3cb5aa;
+	background: rgb(76, 92, 235);
 	color: #1a1a1a;
 }
 
 ::-moz-selection {
-	background: #3cb5aa;
+	background: rgb(76, 92, 235);
 	color: #1a1a1a;
 }
 
@@ -314,12 +314,12 @@ a {
 
 a:link,
 a:visited {
-	color: #19a69a;
+	color: rgb(76, 92, 235);
 	text-decoration: none;
 }
 
 a:hover {
-	color: #5BCDC3;
+	color: rgb(76, 92, 235);
 	text-decoration: none;
 }
 
@@ -2460,7 +2460,7 @@ a.hover-line.current>span:after {
 a.btn,
 button.btn {
 	display: inline-block;
-	background-color: #008ca2;
+	background-color: rgb(76, 92, 235);
 	position: relative;
 	width: 300px;
 	height: 35px;
@@ -2487,7 +2487,7 @@ button.btn {
 
 .btn:hover,
 .btn:active {
-	background-color: #00738C;
+	background-color: rgb(76, 92, 235);
 }
 
 .btn_sub,
@@ -4121,12 +4121,12 @@ textarea.focus,
 
 .navbar .nav-container a:hover {
 	font-weight: bolder;
-	color: #0090b7;
+	color: rgb(76, 92, 235);
 }
 
 .navbar .nav-container .current {
 	font-weight: bolder;
-	color: #0090b7;
+	color: rgb(76, 92, 235);
 }
 
 
